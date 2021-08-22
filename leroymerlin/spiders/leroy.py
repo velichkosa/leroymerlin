@@ -36,3 +36,4 @@ class LeroySpider(scrapy.Spider):
         loader.add_xpath('spec_def', "//section[@class='pdp-section pdp-section--product-characteristicks']//div[@class='def-list__group']//dd/text()")
         loader.add_value('link', response.url)
         yield loader.load_item()
+#

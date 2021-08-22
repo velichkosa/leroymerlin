@@ -109,3 +109,4 @@ class LeroymerlinDownloaderMiddleware:
 #         request.meta[“proxy”] = "http://192.168.1.1:8050"
 #         request.headers[“Proxy-Authorization”] =
 #                           basic_auth_header(“<proxy_user>”, “<proxy_pass>”)
+#
