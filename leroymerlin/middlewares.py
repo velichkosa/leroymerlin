@@ -4,6 +4,7 @@
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+# from w3lib.http import basic_auth_header
 
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
@@ -101,3 +102,10 @@ class LeroymerlinDownloaderMiddleware:
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+
+# class CustomProxyMiddleware(object):
+#     def process_request(self, request, spider):
+#         request.meta[“proxy”] = "http://192.168.1.1:8050"
+#         request.headers[“Proxy-Authorization”] =
+#                           basic_auth_header(“<proxy_user>”, “<proxy_pass>”)
